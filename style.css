@@ -1,4 +1,40 @@
 body {
-    font-family: Arial, sans-serif;
-    padding: 40px;
+  font-family: Arial, sans-serif;
+  background-color: #f5f7f5; /* soft light background */
+  color: #1b1b1b;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #1f4d3a; /* forest green */
+  color: white;
+  padding: 20px 40px;
+}
+
+nav a {
+  color: white;
+  margin-right: 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+h1 {
+  font-size: 32px;
+  color: #1f4d3a;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.6;
 }
