@@ -1,15 +1,27 @@
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f5f7f5; /* soft light background */
-  color: #1b1b1b;
+/* Reset some default spacing */
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
+/* Body */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f7f5;
+  color: #1b1b1b;
+}
+
+/* Header */
 header {
-  background-color: #1f4d3a; /* forest green */
+  background-color: #1f4d3a;
   color: white;
   padding: 20px 40px;
+}
+
+/* Navigation */
+nav {
+  margin-top: 10px;
 }
 
 nav a {
@@ -23,18 +35,23 @@ nav a:hover {
   text-decoration: underline;
 }
 
+/* Main content */
 main {
-  max-width: 800px;
+  max-width: 900px;
   margin: 40px auto;
   padding: 0 20px;
 }
 
+/* Headings */
 h1 {
   font-size: 32px;
   color: #1f4d3a;
+  margin-bottom: 20px;
 }
 
+/* Paragraphs */
 p {
   font-size: 18px;
   line-height: 1.6;
+  margin-bottom: 15px;
 }
