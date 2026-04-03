@@ -22,22 +22,17 @@ nav {
     font-weight: bold;
 }
 
-/* HERO SECTION */
+/* HERO */
 .hero {
-    background: url('images/landscape.jpg') center/cover no-repeat;
+    background-image: url('images/landscape.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     color: white;
     padding: 100px 40px;
 }
 
-.hero h1 {
-    font-size: 48px;
-    margin-bottom: 10px;
-}
-
-.hero p {
-    font-size: 18px;
-}
-
+/* BUTTONS */
 .buttons {
     margin-top: 20px;
 }
@@ -54,17 +49,13 @@ nav {
 .btn-green { background: #556b2f; }
 .btn-dark { background: #3b3b3b; }
 
-/* SECTION TITLES */
+/* GENERAL SECTION */
 .section {
     text-align: center;
     padding: 40px 20px;
 }
 
-.section h2 {
-    margin-bottom: 10px;
-}
-
-/* BUILDING SECTION */
+/* WHAT I AM BUILDING */
 .building {
     display: flex;
     justify-content: center;
@@ -72,17 +63,16 @@ nav {
     margin-top: 20px;
 }
 
-.building div {
-    text-align: center;
+/* MY VILLAGE BACKGROUND */
+.section.village {
+    background-image: url('images/landscape3.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
 }
 
-/* VILLAGE SECTION WITH BACKGROUND */
-.village-section {
-    background: url('images/landscape3.jpg') center/cover no-repeat;
-    color: black;
-    padding: 60px 20px;
-}
-
+/* VILLAGE BOXES */
 .village-images {
     display: flex;
     justify-content: center;
@@ -97,7 +87,6 @@ nav {
 }
 
 .label {
-    text-align: center;
     margin-top: 10px;
 }
 
@@ -110,9 +99,12 @@ nav {
     font-weight: bold;
 }
 
-/* FUTURE SECTION */
+/* FUTURE */
 .future {
-    background: url('images/landscape2.jpg') center/cover no-repeat;
+    background-image: url('images/landscape2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     color: white;
     padding: 60px 30px;
     text-align: left;
@@ -122,20 +114,24 @@ nav {
 .bottom {
     display: flex;
     justify-content: space-between;
+}
+
+/* LEFT SIDE (PROJECT WITH BACKGROUND) */
+.project {
+    width: 60%;
+    background-image: url('images/landscape4.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
     padding: 40px;
 }
 
-/* PROJECT WITH BACKGROUND (LEFT SIDE ONLY) */
-.project {
-    width: 60%;
-    background: url('images/landscape4.jpg') center/cover no-repeat;
-    color: black;
-    padding: 20px;
-}
-
-/* CONNECT (RIGHT SIDE – NO IMAGE) */
+/* RIGHT SIDE (NO BACKGROUND) */
 .connect {
-    width: 30%;
+    width: 40%;
+    padding: 40px;
+    background: #f5f1e8;
 }
 
 .connect button {
@@ -166,7 +162,7 @@ nav {
 
 <!-- HERO -->
 <section class="hero">
-    <h1>Betty Atandi</h1>
+    <h1>Betty Bitengo</h1>
     <p>Community Development and<br>Environmental Conservation Advocate</p>
 
     <div class="buttons">
@@ -182,20 +178,14 @@ nav {
     <p>I focus on practical solutions for rural communities.</p>
 
     <div class="building">
-        <div>
-            <p>Environmental Conservation</p>
-        </div>
-        <div>
-            <p>Youth Development</p>
-        </div>
-        <div>
-            <p>Local Economic Opportunity</p>
-        </div>
+        <div>Environmental Conservation</div>
+        <div>Youth Development</div>
+        <div>Local Economic Opportunity</div>
     </div>
 </section>
 
-<!-- MY VILLAGE (NOW WITH BACKGROUND) -->
-<section class="section village-section">
+<!-- MY VILLAGE -->
+<section class="section village">
     <h2>My Village</h2>
     <p>I grew up in a rural village in Kenya.</p>
 
@@ -212,7 +202,7 @@ nav {
 
         <div>
             <div class="box"></div>
-            <div class="label">Community Life</div>
+            <div class="label">River</div>
         </div>
     </div>
 </section>
