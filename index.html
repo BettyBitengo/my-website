@@ -24,10 +24,7 @@ nav {
 
 /* HERO SECTION */
 .hero {
-    background-image: url('images/landscape.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background: url('images/landscape.jpg') center/cover no-repeat;
     color: white;
     padding: 100px 40px;
 }
@@ -79,7 +76,13 @@ nav {
     text-align: center;
 }
 
-/* VILLAGE SECTION */
+/* VILLAGE SECTION WITH BACKGROUND */
+.village-section {
+    background: url('images/landscape3.jpg') center/cover no-repeat;
+    color: black;
+    padding: 60px 20px;
+}
+
 .village-images {
     display: flex;
     justify-content: center;
@@ -109,25 +112,28 @@ nav {
 
 /* FUTURE SECTION */
 .future {
-    background-image: url('images/landscape2.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background: url('images/landscape2.jpg') center/cover no-repeat;
     color: white;
     padding: 60px 30px;
+    text-align: left;
 }
 
-/* PROJECT + CONNECT */
+/* BOTTOM SECTION */
 .bottom {
     display: flex;
     justify-content: space-between;
     padding: 40px;
 }
 
+/* PROJECT WITH BACKGROUND (LEFT SIDE ONLY) */
 .project {
     width: 60%;
+    background: url('images/landscape4.jpg') center/cover no-repeat;
+    color: black;
+    padding: 20px;
 }
 
+/* CONNECT (RIGHT SIDE – NO IMAGE) */
 .connect {
     width: 30%;
 }
@@ -160,7 +166,7 @@ nav {
 
 <!-- HERO -->
 <section class="hero">
-    <h1>Betty Bitengo</h1>
+    <h1>Betty Atandi</h1>
     <p>Community Development and<br>Environmental Conservation Advocate</p>
 
     <div class="buttons">
@@ -188,8 +194,8 @@ nav {
     </div>
 </section>
 
-<!-- MY VILLAGE -->
-<section class="section">
+<!-- MY VILLAGE (NOW WITH BACKGROUND) -->
+<section class="section village-section">
     <h2>My Village</h2>
     <p>I grew up in a rural village in Kenya.</p>
 
@@ -206,7 +212,7 @@ nav {
 
         <div>
             <div class="box"></div>
-            <div class="label">Our River</div>
+            <div class="label">Community Life</div>
         </div>
     </div>
 </section>
