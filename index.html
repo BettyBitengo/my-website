@@ -6,10 +6,12 @@
 <title>Betty Bitengo</title>
 
 <style>
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #f5f1e8;
+    background-color: #3A5F0B;
+    color: #f2f2f2;
 }
 
 /* NAVBAR */
@@ -17,205 +19,171 @@ nav {
     display: flex;
     justify-content: center;
     gap: 40px;
-    padding: 15px;
-    background: #eee8dc;
+    padding: 18px;
     font-weight: bold;
+    color: #f2f2f2;
 }
 
-/* HERO SECTION */
+/* HERO */
 .hero {
-    background: url('images/landscape4.jpg') center/cover no-repeat;
-    color: white;
-    padding: 100px 40px;
+    text-align: center;
+    padding: 120px 20px 80px;
 }
 
 .hero h1 {
-    font-size: 48px;
+    font-size: 42px;
     margin-bottom: 10px;
+    font-weight: 500;
 }
 
 .hero p {
-    font-size: 18px;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    opacity: 0.9;
 }
 
-.buttons {
-    margin-top: 20px;
-}
-
+/* BUTTONS */
 .buttons a {
     text-decoration: none;
-    padding: 10px 20px;
-    margin-right: 10px;
-    color: white;
+    padding: 10px 18px;
+    margin: 5px;
+    color: #3A5F0B;
+    background: #f2f2f2;
     font-weight: bold;
+    display: inline-block;
 }
 
-.btn-orange { background: #c75a1b; }
-.btn-green { background: #556b2f; }
-.btn-dark { background: #3b3b3b; }
-
-/* SECTION TITLES */
+/* SECTION */
 .section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 60px 20px;
     text-align: center;
-    padding: 40px 20px;
 }
 
 .section h2 {
-    margin-bottom: 10px;
+    font-size: 26px;
+    margin-bottom: 15px;
+    font-weight: 500;
 }
 
-/* BUILDING SECTION */
+.section p {
+    font-size: 16px;
+    line-height: 1.7;
+    opacity: 0.9;
+}
+
+/* BUILDING LIST */
 .building {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 80px;
-    margin-top: 20px;
+    margin-top: 25px;
 }
 
-.building div {
-    text-align: center;
+.building p {
+    margin: 10px 0;
 }
 
-/* VILLAGE SECTION */
-.village-img {
-    width: 250px;
-    height: 160px;
-    object-fit: cover;
-}
-
-.box {
-    width: 250px;
-    height: 160px;
-    background: #ddd;
-}
-
-.label {
-    text-align: center;
-    margin-top: 10px;
-}
-
-/* STORIES */
-.stories button {
-    padding: 12px 25px;
-    background: #c75a1b;
-    color: white;
-    border: none;
-    font-weight: bold;
-}
-
-/* FUTURE SECTION */
+/* FUTURE */
 .future {
-    background: url('images/landscape5.jpg') center/cover no-repeat;
-    color: white;
-    padding: 60px 30px;
-    text-align: left;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 60px 20px;
+    text-align: center;
 }
 
-/* PROJECT + CONNECT */
-.bottom {
-    display: flex;
-    justify-content: space-between;
-    padding: 40px;
+.future h2 {
+    font-size: 26px;
+    font-weight: 500;
+    margin-bottom: 15px;
 }
 
-.project {
-    width: 60%;
+.future p {
+    font-size: 16px;
+    line-height: 1.7;
+    opacity: 0.9;
 }
 
+/* CONNECT */
 .connect {
-    width: 30%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.connect h3 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    font-weight: 500;
 }
 
 .connect button {
-    display: block;
-    width: 100%;
-    margin-bottom: 10px;
-    padding: 12px;
+    padding: 12px 18px;
     border: none;
+    margin: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.linkedin {
+    background: #0077b5;
     color: white;
 }
 
-.linkedin { background: #0077b5; }
-.substack { background: #c75a1b; }
+.substack {
+    background: #f2f2f2;
+    color: #3A5F0B;
+}
 
 </style>
+
 </head>
+
 <body>
-   <!-- NAVBAR -->
-    <nav>
-    <a href="about.html">About</a>
-    <a href="writing.html">Writing</a>
-</nav> 
+
+<!-- NAVBAR -->
+<nav>
+    <div>About</div>
+    <div>Projects</div>
+    <div>Writing</div>
+    <div>Contact</div>
+</nav>
 
 <!-- HERO -->
 <section class="hero">
     <h1>Betty Bitengo</h1>
-    <p>Community Development and<br>Environmental Conservation Advocate</p>
+    <p>Community Development and Environmental Conservation Advocate</p>
 
     <div class="buttons">
-        <a href="#" class="btn-orange">Read My Story</a>
-        <a href="#" class="btn-dark">Connect on Linkedin</a>
+        <a href="#">Read My Story</a>
+        <a href="#">Visit My Substack</a>
+        <a href="#">Connect on LinkedIn</a>
     </div>
 </section>
 
-<!-- WHAT I'M BUILDING -->
+<!-- WHAT I AM BUILDING -->
 <section class="section">
-    <h2>What I'm Building</h2>
-    <p>I believe rural communities already hold the knowledge and potential to build sustainable futures.
-        My work is about strengthening that 
-foundation and creating opportunities for the next generation.</p>
+    <h2>What I Am Building</h2>
+    <p>I focus on practical solutions for rural communities.</p>
 
+    <div class="building">
+        <p>Environmental Conservation</p>
+        <p>Youth Development</p>
+        <p>Local Economic Opportunity</p>
     </div>
-</section>
-
-<!-- MY VILLAGE -->
-<section class="section">
-    <h2>My Village</h2>
-    <p>I grew up in a rural village in Kenya.</p>
-
-    <div class="village-images">
-
-    <div>
-        <img src="images/village.jpg" class="village-img">
-        <div class="label">Village Landscape</div>
-    </div>
-
-    <div>
-        <img src="images/farm.jpg" class="village-img">
-        <div class="label">Family Farm</div>
-    </div>
-
-    <div>
-        <img src="images/river.jpg" class="village-img">
-        <div class="label">Our River</div>
-    </div>
-
-</div>
-</section>
-
-<!-- STORIES -->
-<section class="section stories">
-    <h2>Stories from the Village</h2>
-    <p>Read my latest stories and reflections on rural life and development.</p>
-    <button>Visit My Substack</button>
 </section>
 
 <!-- FUTURE -->
 <section class="future">
     <h2>Vision for the Future</h2>
-    <p>I envision rural communities where young people have the knowledge, tools, and confidence to shape their own futures. By working closely with schools and local families, I aim to support practical, hands-on learning that connects education to everyday life especially through agriculture and environmental stewardship. My goal is to help build systems that are not only sustainable, but owned and driven by the community itself, so that progress continues long after individual projects are complete.</p>
+    <p>Building sustainable projects in rural schools and communities.</p>
 </section>
 
-<!-- BOTTOM -->
-<section class="bottom">
-
-    <div class="connect">
-        <h3>Connect With Me</h3>
-        <button class="linkedin">LinkedIn</button>
-        <button class="substack">Subscribe on Substack</button>
-    </div>
-
+<!-- CONNECT -->
+<section class="connect">
+    <h3>Connect With Me</h3>
+    <button class="linkedin">LinkedIn</button>
+    <button class="substack">Subscribe on Substack</button>
 </section>
 
 </body>
