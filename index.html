@@ -45,7 +45,6 @@
     /* HERO LAYOUT */
     .hero {
       display: flex;
-      justify-content: space-between;
       align-items: stretch;
       padding: 60px 10%;
       min-height: 80vh;
@@ -54,8 +53,10 @@
 
     /* ABOUT */
     .about {
-      flex: 1;
-    }
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
 
     .about h1 {
       font-size: 32px;
@@ -73,14 +74,12 @@
     .image-container {
   flex: 1;
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-}
 
     .image-container img {
-      width: 100px;
-      height: 100px;
+      width: 100%;
+      height: 100%;
       object-fit: cover;
+      display: block;
       border-radius: 0;
       box-shadow: 0 10px 30px rgba(0,0,0,0.15);
     }
