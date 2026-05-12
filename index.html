@@ -1,231 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Betty Bitengo</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Betty Bitengo</title>
 
-<style>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f7f7f7;
+      color: #222;
+    }
 
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #F7F8F6; /* Sandstone Beige */
-    color: #2C5F2D; /* Forest Green */
-}
+    /* NAVIGATION BAR */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 10%;
+      background: white;
+      position: sticky;
+      top: 0;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
 
-/* NAV (HERO MENU) */
-nav {
-    display: flex;
-    justify-content: left;
-    gap: 40px;
-    padding: 20px;
-    font-weight: bold;
-    color: #2C5F2D;
-}
+    .logo {
+      font-weight: bold;
+      font-size: 18px;
+    }
 
-/* BASE SECTION BOX STYLE */
-.section-box {
-    max-width: 850px;
-    margin: 30px auto;
-    padding: 40px;
-    border-radius: 8px;
-}
+    .nav-links a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #222;
+      font-weight: 500;
+    }
 
-/* DIFFERENT EARTHY BOX COLORS */
-.hero-box {
-    background-color: #E8EFE6; /* soft sage */
-}
+    .nav-links a:hover {
+      color: #555;
+    }
 
-.about-box {
-    background-color: #F1E9DD; /* warm sand */
-}
+    /* MAIN LAYOUT */
+    .hero {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 60px 10%;
+      min-height: 80vh;
+      gap: 40px;
+    }
 
-.building-box {
-    background-color: #E7E3DA; /* muted clay beige */
-}
+    /* LEFT SIDE (ABOUT) */
+    .about {
+      flex: 1;
+    }
 
-.future-box {
-    background-color: #E9F0E4; /* soft olive tint */
-}
+    .about h1 {
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
 
-.connect-box {
-    background-color: #F3EFE7; /* light neutral earth */
-}
+    .about p {
+      font-size: 18px;
+      line-height: 1.6;
+      max-width: 500px;
+    }
 
-/* TEXT */
-h1, h2, h3 {
-    margin-top: 0;
-    color: #2C5F2D;
-    font-weight: 500;
-}
+    /* RIGHT SIDE (IMAGE) */
+    .image-container {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+    }
 
-p {
-    line-height: 1.7;
-    font-size: 16px;
-    color: #2C5F2D;
-}
+    .image-container img {
+      width: 320px;
+      height: 320px;
+      object-fit: cover;
+      border-radius: 50%;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    }
 
-/* HERO */
-.hero {
-    text-align: left;
-    padding: 120px 20px 80px;
-}
+    /* SOCIAL ICONS */
+    .socials {
+      text-align: center;
+      padding: 30px 0;
+    }
 
-.hero h1 {
-    font-size: 42px;
-    margin-bottom: 10px;
-    font-weight: 500;
-    color: #2C5F2D;
-}
+    .socials a {
+      margin: 0 15px;
+      text-decoration: none;
+      font-size: 18px;
+      color: #222;
+      font-weight: bold;
+    }
 
-.hero p {
-    font-size: 16px;
-    line-height: 1.6;
-    margin-bottom: 25px;
-    color: #2C5F2D;
+    .socials a:hover {
+      color: #0077b5;
+    }
 
-}
+    /* RESPONSIVE */
+    @media (max-width: 768px) {
+      .hero {
+        flex-direction: column;
+        text-align: center;
+      }
 
-/* BUTTONS */
-.buttons a {
-    text-decoration: none;
-    padding: 12px 18px;
-    margin: 6px;
-    background: #E86F1B; /* Sunset Orange */
-    color: #ffffff;
-    font-weight: bold;
-    display: inline-block;
-    border-radius: 2px;
-}
+      .about p {
+        margin: 0 auto;
+      }
 
-/* SECTION */
-.section {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 60px 20px;
-    text-align: center;
-}
-
-.section h2 {
-    font-size: 26px;
-    margin-bottom: 15px;
-    font-weight: 500;
-    color: #2C5F2D
-}
-
-.section p {
-    font-size: 16px;
-    line-height: 1.7;
-    color: #2C5F2D
-}
-
-/* BUILDING LIST */
-.building {
-    margin-top: 25px;
-}
-
-.building p {
-    margin: 10px 0;
-    color: #2C5F2D
-}
-
-/* FUTURE */
-.future {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 60px 20px;
-    text-align: center;
-}
-
-.future h2 {
-    font-size: 26px;
-    font-weight: 500;
-    margin-bottom: 15px;
-    color: #2C5F2D;
-}
-
-.future p {
-    font-size: 16px;
-    line-height: 1.7;
-    color: #2C5F2D
-}
-
-/* CONNECT */
-.connect {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 60px 20px;
-    text-align: center;
-}
-
-.connect h3 {
-    font-size: 22px;
-    margin-bottom: 20px;
-    font-weight: 500;
-    color: #2C5F2D;
-}
-
-.connect button {
-    padding: 12px 18px;
-    border: none;
-    margin: 5px;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-.linkedin {
-    background: #E86F1B;
-    color: white;
-}
-
-.substack {
-    background: #E86F1B;
-    color: #3A5F0B;
-}
-
-</style>
-
+      .nav-links a {
+        margin-left: 10px;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
-<!-- NAVBAR -->
-<nav>
-    <a href="about.html">About</a>
-    <a href="writing.html">Writing</a>
-</nav>
+  <!-- NAVIGATION -->
+  <div class="navbar">
+    <div class="logo">Betty Bitengo</div>
 
-<!-- HERO -->
-<section class="hero">
-    <h1>Betty Bitengo</h1>
-    <p>Community Development and Environmental Conservation Advocate</p>
-
-    <div class="buttons">
-        <a href="#">Visit My Substack</a>
-        <a href="#">Connect on LinkedIn</a>
+    <div class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#writing">Writing</a>
     </div>
-</section>
+  </div>
 
-<!-- WHAT I AM BUILDING -->
-<section class="section">
-    <h2>What I Am Building</h2>
-    <p>I believe rural communities already hold the knowledge and potential to build sustainable futures.
-My work is about strengthening that foundation and creating opportunities for the next generation.</p>
-</section>
+  <!-- HERO SECTION -->
+  <section class="hero" id="home">
 
-<!-- FUTURE -->
-<section class="future">
-    <h2>Vision for the Future</h2>
-    <p>I envision rural communities where young people have the knowledge, tools, and confidence to shape their own futures. By working closely with schools and local families, I aim to support practical, hands-on learning that connects education to everyday life especially through agriculture and environmental stewardship. My goal is to help build systems that are not only sustainable, but owned and driven by the community itself, so that progress continues long after individual projects are complete.</p>
-</section>
+    <!-- LEFT: ABOUT -->
+    <div class="about">
+      <h1>Betty Bitengo</h1>
 
-<!-- CONNECT -->
-<section class="connect">
-    <h3>Connect With Me</h3>
-    <button class="linkedin">LinkedIn</button>
-    <button class="substack">Subscribe on Substack</button>
-</section>
+      <p>
+        Betty Atandi is a Kenyan creative strategist, ecological restoration advocate, and storyteller building ideas that connect people, land, and human experience.
+
+Her work lives at the intersection of ecological restoration, environmental conservation, digital storytelling, and community impact shaped by a deep belief that restoring landscapes also means restoring relationships, knowledge, and hope for future generations.
+
+Raised in Kenya, Betty developed an early fascination with nature, ecosystems, and the unseen emotional power of stories. That curiosity grew into projects focused on reimagining how people engage with land stewardship, restoration, education, and community-driven environmental change.
+
+She studied Community Development and Environmental Conservation, and her journey has never followed a straight line. Instead, it has been driven by vision, persistence, and an unusual ability to see connections where others see limitations.
+
+Betty has worked with NGOs, contributed to outreach and restoration-focused initiatives, and continues to explore creative ways to bridge ecological restoration, human connection, and meaningful impact. Her work is grounded in the belief that environmental restoration is not only scientific work, but deeply human work.
+
+Outside of her professional work, Betty values faith, connection with others, creativity, and the simple beauty found in everyday life.
+
+This website is a living reflection of her journey, ideas, and the future she is building.
+      </p>
+    </div>
+
+    <!-- RIGHT: IMAGE -->
+    <div class="image-container">
+      <img src="your-image.jpg" alt="Betty Bitengo">
+    </div>
+
+  </section>
+
+  <!-- WRITING SECTION (PLACEHOLDER) -->
+  <section id="writing" style="padding: 80px 10%;">
+    <h2>Writing</h2>
+    <p>Coming soon...</p>
+  </section>
+
+  <!-- SOCIAL ICONS -->
+  <div class="socials">
+    <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+    <a href="https://substack.com" target="_blank">Substack</a>
+  </div>
 
 </body>
 </html>
