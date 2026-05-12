@@ -43,21 +43,18 @@
     }
 
     /* HERO LAYOUT */
-    .hero {
+     .hero {
       display: flex;
-      align-items: stretch;
-      padding: 60px 120px;
-      gap: 60px;
-      max-width: 1200px;
-      margin: 0 auto;
-    }
+      justify-content: space-between;
+      align-items: flex-start;
+      padding: 60px 10%;
+      min-height: 80vh;
+      gap: 50px;
 
     /* ABOUT */
-    .about {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-}
+    about {
+      flex: 1;
+    }
 
     .about h1 {
       font-size: 32px;
@@ -72,19 +69,20 @@
     }
 
     /* IMAGE */
-    .image-container {
-  flex: 0 0 380px;
-  display: flex;
+     .image-container {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+    }
 
-    .image-container img {
-      width: 100%;
-      height: 100%;
+     .image-container img {
+      width: 400px;
+      height: 400px;
       object-fit: cover;
-      object-position: centre;
-      display: block;
       border-radius: 0;
       box-shadow: 0 10px 30px rgba(0,0,0,0.15);
     }
+
 
     /* SOCIALS */
     .socials {
