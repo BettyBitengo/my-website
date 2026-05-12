@@ -16,18 +16,13 @@
     /* NAVIGATION BAR */
     .navbar {
       display: flex;
-      justify-content: space-between;
+      justify-content: flex-end;
       align-items: center;
       padding: 20px 10%;
       background: white;
       position: sticky;
       top: 0;
       box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-    }
-
-    .logo {
-      font-weight: bold;
-      font-size: 18px;
     }
 
     .nav-links a {
@@ -48,7 +43,7 @@
       align-items: center;
       padding: 60px 10%;
       min-height: 80vh;
-      gap: 40px;
+      gap: 50px;
     }
 
     /* LEFT SIDE (ABOUT) */
@@ -57,14 +52,15 @@
     }
 
     .about h1 {
-      font-size: 40px;
-      margin-bottom: 10px;
+      font-size: 32px;
+      margin-bottom: 20px;
     }
 
     .about p {
-      font-size: 18px;
-      line-height: 1.6;
-      max-width: 500px;
+      font-size: 15px;
+      line-height: 1.8;
+      margin-bottom: 16px;
+      max-width: 550px;
     }
 
     /* RIGHT SIDE (IMAGE) */
@@ -75,11 +71,21 @@
     }
 
     .image-container img {
-      width: 320px;
-      height: 320px;
+      width: 380px;
+      height: 380px;
       object-fit: cover;
-      border-radius: 50%;
+      border-radius: 0; /* square image */
       box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    }
+
+    /* WRITING SECTION */
+    #writing {
+      padding: 80px 10%;
+    }
+
+    #writing h2 {
+      font-size: 28px;
+      margin-bottom: 20px;
     }
 
     /* SOCIAL ICONS */
@@ -91,7 +97,7 @@
     .socials a {
       margin: 0 15px;
       text-decoration: none;
-      font-size: 18px;
+      font-size: 16px;
       color: #222;
       font-weight: bold;
     }
@@ -104,15 +110,12 @@
     @media (max-width: 768px) {
       .hero {
         flex-direction: column;
-        text-align: center;
+        text-align: left;
       }
 
-      .about p {
-        margin: 0 auto;
-      }
-
-      .nav-links a {
-        margin-left: 10px;
+      .image-container img {
+        width: 300px;
+        height: 300px;
       }
     }
   </style>
@@ -122,8 +125,6 @@
 
   <!-- NAVIGATION -->
   <div class="navbar">
-    <div class="logo">Betty Bitengo</div>
-
     <div class="nav-links">
       <a href="#home">Home</a>
       <a href="#writing">Writing</a>
@@ -138,20 +139,33 @@
       <h1>Betty Bitengo</h1>
 
       <p>
-        Betty Atandi is a Kenyan creative strategist, ecological restoration advocate, and storyteller building ideas that connect people, land, and human experience.
-
-Her work lives at the intersection of ecological restoration, environmental conservation, digital storytelling, and community impact shaped by a deep belief that restoring landscapes also means restoring relationships, knowledge, and hope for future generations.
-
-Raised in Kenya, Betty developed an early fascination with nature, ecosystems, and the unseen emotional power of stories. That curiosity grew into projects focused on reimagining how people engage with land stewardship, restoration, education, and community-driven environmental change.
-
-She studied Community Development and Environmental Conservation, and her journey has never followed a straight line. Instead, it has been driven by vision, persistence, and an unusual ability to see connections where others see limitations.
-
-Betty has worked with NGOs, contributed to outreach and restoration-focused initiatives, and continues to explore creative ways to bridge ecological restoration, human connection, and meaningful impact. Her work is grounded in the belief that environmental restoration is not only scientific work, but deeply human work.
-
-Outside of her professional work, Betty values faith, connection with others, creativity, and the simple beauty found in everyday life.
-
-This website is a living reflection of her journey, ideas, and the future she is building.
+        Betty Bitengo is a Kenyan creative strategist, ecological restoration advocate, and storyteller building ideas that connect people, land, and human experience.
       </p>
+
+      <p>
+        Her work lives at the intersection of ecological restoration, environmental conservation, digital storytelling, and community impact shaped by a deep belief that restoring landscapes also means restoring relationships, knowledge, and hope for future generations.
+      </p>
+
+      <p>
+        Raised in Kenya, Betty developed an early fascination with nature, ecosystems, and the unseen emotional power of stories. That curiosity grew into projects focused on reimagining how people engage with land stewardship, restoration, education, and community-driven environmental change.
+      </p>
+
+      <p>
+        She studied Community Development and Environmental Conservation, and her journey has never followed a straight line. Instead, it has been driven by vision, persistence, and an unusual ability to see connections where others see limitations.
+      </p>
+
+      <p>
+        Betty has worked with NGOs, contributed to outreach and restoration-focused initiatives, and continues to explore creative ways to bridge ecological restoration, human connection, and meaningful impact. Her work is grounded in the belief that environmental restoration is not only scientific work, but deeply human work.
+      </p>
+
+      <p>
+        Outside of her professional work, Betty values faith, connection with others, creativity, and the simple beauty found in everyday life.
+      </p>
+
+      <p>
+        This website is a living reflection of her journey, ideas, and the future she is building.
+      </p>
+
     </div>
 
     <!-- RIGHT: IMAGE -->
@@ -161,10 +175,10 @@ This website is a living reflection of her journey, ideas, and the future she is
 
   </section>
 
-  <!-- WRITING SECTION (PLACEHOLDER) -->
-  <section id="writing" style="padding: 80px 10%;">
+  <!-- WRITING SECTION -->
+  <section id="writing">
     <h2>Writing</h2>
-    <p>Coming soon...</p>
+    <p>Content will be added here later.</p>
   </section>
 
   <!-- SOCIAL ICONS -->
