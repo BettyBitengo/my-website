@@ -15,14 +15,21 @@
 
     /* NAVIGATION */
     .navbar {
-      display: flex;
-      justify-content: flex-end;
-      padding: 20px 10%;
-      background: white;
-      position: sticky;
-      top: 0;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-    }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10%;
+  background: white;
+  position: sticky;
+  top: 0;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.nav-left {
+  font-weight: 600;
+  font-size: 16px;
+}
+
 
     .nav-links a {
       margin-left: 20px;
@@ -64,10 +71,11 @@
 
     /* IMAGE */
     .image-container {
-      flex: 1;
-      display: flex;
-      justify-content: center;
-    }
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
 
     .image-container img {
       width: 380px;
@@ -113,7 +121,7 @@
 
   <!-- NAV -->
   <div class="navbar">
-<div class="nav-right">
+<div class="nav-left">
 Betty Bitengo
 </div>
 
