@@ -2,37 +2,110 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Writing | Betty Bitengo</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Writings</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 40px;
+      background: #f7f7f7;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    /* GRID LAYOUT (3 COLUMNS) */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    /* RESPONSIVE (important) */
+    @media (max-width: 900px) {
+      .grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 600px) {
+      .grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* ARTICLE CARD */
+    .card {
+      background: white;
+      padding: 18px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+
+    .card h2 {
+      font-size: 18px; /* smaller font (FIXED) */
+      margin-top: 0;
+    }
+
+    .excerpt {
+      font-size: 14px; /* smaller excerpt text */
+      line-height: 1.6;
+      color: #444;
+    }
+
+    .read-more {
+      display: inline-block;
+      margin-top: 10px;
+      font-size: 13px;
+      color: #000;
+      text-decoration: underline;
+    }
+  </style>
 </head>
+
 <body>
 
-<header>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="writing.html">Writing</a>
-  </nav>
-</header>
+<h1>My Writings</h1>
 
-<main>
-  <div class="writing-post">
+<div class="grid">
 
-  <h2>Women and Green Economy</h2>
+  <!-- ARTICLE CARD -->
+  <div class="card">
+    <h2>Women and Green Economy</h2>
 
-  <div class="excerpt">
-
-    <p>
+    <div class="excerpt">
       Women’s engagement in the green economy is important for addressing challenges facing the environment and achieving sustainable development. Sustainable development is the type of development that meets the needs of the present generation without compromising the ability of future generations to meet their own needs. Despite the challenges, empowering women and taking into consideration gender-inclusive policies can help in attaining a more sustainable and equitable future. By recognizing and harnessing women’s abilities, society can better maneuver the transition to a more sustainable and greener economy. According to (Popkova, 2022) Green economy is an economy that improves the welfare of the people, provides social justice, and at the same time significantly reduces the risks to the environment and its depletion.
-    </p>
+    </div>
 
+    <a class="read-more" href="women-and-green-economy.html">
+      Read more
+    </a>
   </div>
 
-  <a class="read-more" href="women-and-green-economy.html">
-    Read more
-  </a>
+  <!-- DUPLICATE THIS CARD FOR OTHER ARTICLES -->
+  <div class="card">
+    <h2>Title Here</h2>
+    <div class="excerpt">
+      Your excerpt goes here...
+    </div>
+    <a class="read-more" href="#">
+      Read more
+    </a>
+  </div>
+
+  <div class="card">
+    <h2>Title Here</h2>
+    <div class="excerpt">
+      Your excerpt goes here...
+    </div>
+    <a class="read-more" href="#">
+      Read more
+    </a>
+  </div>
 
 </div>
-</main>
 
 </body>
-</html>
